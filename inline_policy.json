@@ -1,0 +1,34 @@
+{
+	"Version": "2012-10-17",
+	"Statement": 
+	[
+	  {
+		"Effect":"Allow",
+		"Action":[
+		   "s3:*"
+		],
+		"Resource":[
+			"arn:aws:s3:::rk-pixelator-processed",
+			"arn:aws:s3:::rk-pixelator-processed/*",
+			"arn:aws:s3:::rk-pixelator-source/*",
+			"arn:aws:s3:::rk-pixelator-source"
+		]
+		
+	  },
+	  {
+		  "Effect": "Allow",
+		  "Action": "logs:CreateLogGroup",
+		  "Resource": "arn:aws:logs:us-east-1:PUTYOURIDHERE:*"
+	  },
+	  {
+		  "Effect": "Allow",
+		  "Action": [
+			  "logs:CreateLogStream",
+			  "logs:PutLogEvents"
+		  ],
+		  "Resource": [
+			  "arn:aws:logs:us-east-1:PUTYOURIDHERE:log-group:/aws/lambda/pixelator:*"
+		  ]
+	  }
+	]
+}
