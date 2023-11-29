@@ -1,4 +1,4 @@
-# aws-miniprojects
+# pixelator-app
 AWS mini project
 
 Thanks to Adrian Cantrill for all the awesome AWS projects which help in understanding the services better
