@@ -1,5 +1,5 @@
 # aws-miniprojects
-This is an AWS mini project 
+AWS mini project
 
 Thanks to Adrian Cantrill for all the awesome AWS projects which help in understanding the services better
 
